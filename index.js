@@ -10,6 +10,10 @@ app.get("/greet", (req, res) => {
   return res.send("Hello " + fullName + "!");
 });
 
+app.get("/", (req, res) => {
+  return res.send("Welcome to the Express Server Demo!");
+});
+
 app.listen(3000, () => {
   console.log("Express server initialized on PORT " + 3000);
 });
